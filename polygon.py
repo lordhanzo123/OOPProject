@@ -95,9 +95,10 @@ class Polygon():  # Polygon works to create a beam and frame column.
             np = p
 
 
-            """blit function"""
+            """blit function: to load image"""
             screen.blit(rotated_logo_img, (np.x, np.y))
             #np.x, np.y: new position
+            #pymunk does not allow to have those coordinate => use pygame to get this
 
 
 
