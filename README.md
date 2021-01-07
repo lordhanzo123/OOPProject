@@ -9,8 +9,10 @@ Download the latest release and extract it, which contains 2 things:
 # How to run the game
 1. Download python on this website : https://www.python.org/
 2. Install libraries : 
-You can open cmd on windows or terminal on Mac and type :
+You can open cmd on windows or terminal on Mac and type:
+
 Install pygame: pip install pygame
 Install pymunk: pip install pymunk
+
 3. Run the main.py and start play the game
 
