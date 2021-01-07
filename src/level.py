@@ -20,12 +20,13 @@ class Level():
 
     def build_0(self):
         """level 0"""
-        pig1 = Pig(980, 100, self.space)
+        pig1 = Pig(980, 100, self.space) #create pigs
         pig2 = Pig(985, 182, self.space)
         self.pigs.append(pig1)
         self.pigs.append(pig2)
-        p = (950, 80)
-        self.columns.append(Polygon(p, 20, 85, self.space))
+        #create Polygons
+        p = (950, 80) #position
+        self.columns.append(Polygon(p, 20, 85, self.space)) #
         p = (1010, 80)
         self.columns.append(Polygon(p, 20, 85, self.space))
         p = (980, 150)
@@ -287,9 +288,9 @@ class Level():
 
     def load_level(self):
         try:
-            build_name = "build_"+str(self.number)
-            getattr(self, build_name)()
+            build_name = "build_"+str(self.number) #current level 
+            getattr(self, build_name)() #check level
         except AttributeError:
-            self.number = 0
-            build_name = "build_"+str(self.number)
-            getattr(self, build_name)()
+            self.number = 0 #reset level
+            build_name = "build_"+str(self.number) 
+            getattr(self, build_name)() #play from the beginning
